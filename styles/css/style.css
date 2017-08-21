@@ -1,0 +1,78 @@
+/*---- colors ----*/
+/*---- end ----*/
+*, *:before, *:after {
+  box-sizing: border-box;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  border: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #191919;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%; }
+
+.firstCard {
+  width: 300px;
+  background-color: #ff2300;
+  padding: 15px;
+  margin: 20px; }
+  .firstCard .borderTop {
+    border: 2px solid white;
+    width: 100%; }
+  .firstCard .header {
+    display: flex;
+    justify-content: space-between; }
+    .firstCard .header p {
+      color: white;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin: 5px 0; }
+  .firstCard .picture {
+    background-image: url(../../images/firstCardPix.png);
+    height: 226px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 0 15px 5px #ff2300 inset;
+    border-radius: 10px; }
+  .firstCard .info {
+    display: flex;
+    background: url(../../images/arsenalLogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px 5px #ff2300 inset; }
+    .firstCard .info .left {
+      transform: rotate(270deg);
+      transform-origin: left top 0;
+      margin-top: 100px;
+      color: #eecd00;
+      font-weight: bold;
+      font-size: 10px; }
+      .firstCard .info .left i {
+        color: white; }
+    .firstCard .info .detailsFirstCard {
+      color: white;
+      flex-grow: 2; }
+      .firstCard .info .detailsFirstCard .line {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 0; }
+        .firstCard .info .detailsFirstCard .line:last-child {
+          color: #eecd00;
+          display: block; }
+      .firstCard .info .detailsFirstCard .detailsBorder {
+        border: 1px solid white;
+        width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
