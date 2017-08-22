@@ -27,81 +27,291 @@ body {
   height: 100%;
 }
 
-.firstCard{
-  width: 300px;
-  background-color: $firstCardBackground;
-  padding: 15px;
-  margin: 20px;
+.cards{
+  display: flex;
 
-  .borderTop{
-    border: 2px solid white;
-    width: 100%;
-  }
+  .firstCard{
+    width: 300px;
+    background-color: $firstCardBackground;
+    padding: 15px;
+    margin: 20px;
 
-  .header{
-
-    display: flex;
-    justify-content: space-between;
-
-    p{
-      color: white;
-      font-size: 1.4em;
-      font-weight: bold;
-      margin: 5px 0;
+    .borderTop{
+      border: 2px solid white;
+      width: 100%;
     }
-  }
 
-  .picture{
-    background-image: url(../../images/firstCardPix.png);
-    height: 226px;
-    width: 100%;
-    background-position: center;
-  	background-repeat: no-repeat;
-	  background-size: contain;
-    box-shadow: 0 0 15px 5px $firstCardBackground inset;
-    border-radius: 10px;
-  }
+    .header{
 
-  .info{
-    display: flex;
-    background: url(../../images/arsenalLogo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0 0 15px 5px $firstCardBackground inset;
-    
-    .left{
-      transform: rotate(270deg);
-      transform-origin: left top 0;
-      margin-top: 100px;
-      color: #eecd00;
-      font-weight: bold;
-      font-size: 10px;
+      display: flex;
+      justify-content: space-between;
 
-      i{
+      p{
         color: white;
+        font-size: 1.4em;
+        font-weight: bold;
+        margin: 5px 0;
       }
     }
-    .detailsFirstCard{
-      color: white;
-      flex-grow: 2;
-      .line{
 
-        display: flex;
-        justify-content: space-between;
-        padding: 3px 0;
-        &:last-child{
-          color: #eecd00;
-        display: block;
+    .picture{
+      background-image: url(../../images/firstCardPix.png);
+      height: 226px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      box-shadow: 0 0 15px 5px $firstCardBackground inset;
+      border-radius: 10px;
+    }
+
+    .info{
+      display: flex;
+      background: url(../../images/arsenalLogo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0 0 15px 5px $firstCardBackground inset;
+
+      .left{
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        margin-top: 206px;
+        color: #eecd00;
+        font-weight: bold;
+        font-size: 30px;
+        position: absolute;
+
+        i{
+          color: white;
+        }
+      }
+      .detailsFirstCard{
+        color: white;
+        flex-grow: 2;
+        margin-left: 36px;
+        .line{
+
+          display: flex;
+          justify-content: space-between;
+          padding: 3px 0;
+          &:last-child{
+            color: #eecd00;
+            display: block;
+          }
+        }
+
+        .detailsBorder{
+          border: 1px solid white;
+          width: 100%;
         }
       }
 
-      .detailsBorder{
-        border: 1px solid white;
-        width: 100%;
+    }
+
+  }
+
+  .secondCard{
+    width: 740px;
+    background-color: white;
+    margin: 20px;
+    display: flex;
+
+    .leftSide{
+      background: url(../../images/ronaldo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 47%;
+      height: 500px;
+      margin: 1%;
+      margin-right: 2%;
+      position: relative;
+      overflow: hidden;
+
+      .circle{
+        width: 1000px;
+        height: 1000px;
+        border-radius: 43%;
+        background: repeating-linear-gradient(-30deg, #e9eece, #72786d 10%, #e9eece 18%);
+        position: absolute;
+        /* padding-right: 50px; */
+        left: -933px;
+        top: -243px;
+        box-shadow: 9px 0px 30px black;
+      }
+
+      .text{
+        color: #ede44e;
+        font-size: 20px;
+        line-height: 0.7;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 8px;
+        text-shadow: 2px 2px black;
+        position: absolute;
+
+        p{
+          padding-left: 8px;
+        }
+
+        .below{
+          color: #f0f4e9;
+          text-shadow: 1px 1px black;
+          transform: rotate(270deg);
+          transform-origin: left top 0;
+          margin-top: 402px;
+          font-size: 35px;
+          text-align: center;
+          position: fixed;
+
+          b{
+            color: #cd5930;
+            font-size: 20px;
+          }
+
+        }
+
+      }
+
+      .logo{
+        background: url(../../images/madridLogo.png);
+        height: 40px;
+        width: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 8px;
+      }
+      .ball{
+        background: linear-gradient(45deg,#25701f 40%, #da3e03 55%);
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        border-radius: 100%;
+        box-shadow: 2px 2px 2px black;
       }
     }
 
+    .rightSide{
+      background: linear-gradient(#f25900 26%, #bed000, #fff 80%);
+      width: 47%;
+      margin: 1%;
+      margin-left: 2%;
+      position: relative;
+      overflow: hidden;
+      border-left: 1px solid #9e8d77;
+
+      .circle{
+        width: 1400px;
+        height: 1400px;
+        border-radius: 50%;
+        background: repeating-linear-gradient(-30deg, #e9eece, #72786d 10%, #e9eece 18%);
+        position: absolute;
+        /* padding-right: 50px; */
+        left: 307px;
+        top: -450px;
+        box-shadow: -5px 0px 12px black;
+      }
+
+      .circleText{
+
+      }
+
+      .face{
+        background: url(../../images/ronaldoFace.png);
+        height: 230px;
+        width: 230px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+        box-shadow: 0 0 15px 5px #f55b00 inset;
+      }
+
+      .info{
+        text-align: center;
+        margin: 0 30px;
+
+        .header{
+          color:#e8ebbd;
+          font-size: 18px;
+          text-shadow: 2px 1px black;
+          font-weight: bold;
+        }
+        .details{
+          font-size: 14px;
+
+          p{
+            font-size: 12px;
+          }
+        }
+        .sticker{
+          background-color: #cabd43;
+          width: 43px;
+          font-size: 10px;
+          margin: 0 auto;
+          margin-top: 5px;
+          font-weight: bold;
+          border: 0.5px solid black;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+          
+          .top{
+            color: #91451e;
+          }
+          .bottom{
+            color: #475e35;
+            font-style: italic;
+          }
+        }
+        .border{
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(to right, rgba(255,0,0,0), #f55b00, rgba(255,0,0,0));
+          margin: 2px 0;
+        }
+      }
+      .ball{
+        background: linear-gradient(45deg,#25701f 40%, #da3e03 55%);
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 5%;
+        bottom: 24%;
+        border-radius: 100%;
+        box-shadow: 2px 2px 2px black;
+      }
+
+      .number{
+        background-color: #f9df00;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 8%;
+        top: 8%;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 27px;
+        font-weight: bold;
+      }
+
+      .rotatedText{
+        color: #f0f4e9;
+        text-shadow: 1px 1px black;
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        margin-top: 250px;
+        font-size: 10px;
+        margin-left: 23px;
+        text-align: center;
+        position: fixed;
+      }
+    }
   }
 
 }
