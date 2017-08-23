@@ -160,10 +160,11 @@ body {
           text-shadow: 1px 1px black;
           transform: rotate(270deg);
           transform-origin: left top 0;
-          margin-top: 402px;
+          margin-top: 400px;
           font-size: 35px;
           text-align: center;
-          position: fixed;
+          position: absolute;
+          width: 400px;
 
           b{
             color: #cd5930;
@@ -217,22 +218,31 @@ body {
         box-shadow: -5px 0px 12px black;
       }
 
-      .circleText{
-
+      .rightText{
+        color: #f0f4e9;
+        text-shadow: 1px 1px black;
+        transform: rotate(90deg);
+        transform-origin: left top 0;
+        margin-top: 231px;
+        font-size: 25px;
+        right: -40px;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
       }
 
       .face{
 
-          background: url(../../images/ronaldoFace.png);
-          height: 250px;
-          width: 250px;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          border-radius: 50%;
-          margin: 0 auto;
-          margin-top: 20px;
-          box-shadow: 0 0 15px 5px #f55b00 inset;
+        background: url(../../images/ronaldoFace.png);
+        height: 250px;
+        width: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+        box-shadow: 0 0 15px 5px #f55b00 inset;
 
       }
 
@@ -312,8 +322,182 @@ body {
         margin-top: 250px;
         font-size: 10px;
         margin-left: 23px;
-        text-align: center;
-        position: fixed;
+        position: absolute;
+      }
+    }
+  }
+
+  .thirdCard{
+    width: 300px;
+    background-color: #dfd8dd;
+    margin: 20px 10px;
+    border: 6px solid #cfc8cb;
+
+    .top{
+      background-color: black;
+      width: 90%;
+      margin: 5%;
+      height: 93px;
+      padding-top: 9px;
+      border: 6px solid #b0a5ab;
+      overflow: hidden;
+
+
+      .content{
+        background-color: white;
+        width: 94%;
+        height: 58px;
+        margin: 0 auto;
+        border: 1px solid #493a23;
+        padding: 7px;
+        position: relative;
+
+        .gma{
+          position: absolute;
+          top: -6px;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          text-align: center;
+          color: #493a23;
+          z-index: 1;
+          font-size: 13px;
+          font-weight: bold;
+        }
+
+        .circleThirdCard{
+          position: absolute;
+          height: 100px;
+          width: 100px;
+          background-color: black;
+          border-radius: 50%;
+          top: -127px;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          text-align: center;
+          border: 1px solid #493a23;
+
+        }
+        .text{
+          font-weight: bold;
+          font-size: 11px;
+          justify-content: space-between;
+          display: flex;
+          padding-top: 5px;
+
+          .left{
+            margin: auto 0;
+
+          }
+
+          .right{
+            text-align: center;
+            margin: auto 0;
+          }
+
+
+        }
+
+        .bottomText{
+          color: #615238;
+          font-size: 8px;
+          float: right;
+          margin-top: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .bottom{
+      background-color: #e6e5e2;
+      border: 6px solid #beb3b9;
+      width: 90%;
+      margin: 5%;
+
+      .photo{
+        background: url(../../images/jordan.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 358px;
+        width: 94%;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        border: 3px solid #90232d;
+        position: relative;
+
+        .draftPick{
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: #d7d0d5;
+          opacity: 0.5;
+          line-height: 1.5;
+
+          .gmaHeader{
+            font-size: 65px;
+            text-shadow: 0px 2px #d7d0d5;
+            line-height: 0.9;
+          }
+
+          .middle{
+            font-size: 20px;
+          }
+
+          .jordanBottom{
+            font-size: 10px;
+            letter-spacing: 4px;
+          }
+
+        }
+
+        .jordan{
+          position: absolute;
+          bottom: 3px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          background: #661111;
+          padding: 2px;
+          margin: 0 48px;
+          border-radius: 10%;
+          color: #b3b3b3;
+          border: 1px solid #b3b3b3;
+
+        }
+        .nbaLogo{
+          background: url(../../images/nba.png);
+          height: 80px;
+          width: 30px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          bottom: -5px;
+          left: 5px;
+        }
+
+        .bullsLogo{
+          height: 45px;
+          width: 45px;
+          background-color: #851c1b;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          border: 2px solid #b3b3b3;
+
+          img{
+            height: 45px;
+            width: 45px;
+          }
+        }
       }
     }
   }
@@ -344,31 +528,43 @@ body {
 @media screen and (min-width: 640px) and (max-width: 959px){
 
   .cards{
+    flex-direction: column;
     .secondCard{
 
+      .leftSide{
+        .text{
+          .below{
+          }
+        }
+      }
+
       .rightSide{
-        .face{
-
-          height: 150px;
-          width: 150px;
-
-        }
-        .circle{
-          left: 200px;
-        }
-        .ball{
-          bottom: 36%;
-          width: 25px;
-          height: 25px;
-        }
-        .number{
-          height: 25px;
-          width: 25px;
-          font-size: 24px;
-        }
-        .info{
-          padding-top: 20px;
-        }
+        // .face{
+        //
+        //   height: 150px;
+        //   width: 150px;
+        //
+        // }
+        //
+        // .rightText{
+        //   font-size: 22px;
+        // }
+        // .circle{
+        //   left: 200px;
+        // }
+        // .ball{
+        //   bottom: 36%;
+        //   width: 25px;
+        //   height: 25px;
+        // }
+        // .number{
+        //   height: 25px;
+        //   width: 25px;
+        //   font-size: 24px;
+        // }
+        // .info{
+        //   padding-top: 20px;
+        // }
       }
     }
   }
@@ -377,17 +573,19 @@ body {
 
 @media screen and (min-width: 0) and (max-width: 639px){
 
-    .cards{
-      .secondCard{
+  .cards{
+    flex-direction: column;
 
-        .rightSide{
-          .face{
+    .secondCard{
 
-            height: 130px;
-            width: 130px;
+      .rightSide{
+        .face{
 
-          }
+          height: 130px;
+          width: 130px;
+
         }
       }
     }
+  }
 }
