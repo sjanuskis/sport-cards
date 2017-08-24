@@ -76,11 +76,12 @@ body {
       .left{
         transform: rotate(270deg);
         transform-origin: left top 0;
-        margin-top: 206px;
+        margin-top: 219px;
         color: #eecd00;
         font-weight: bold;
         font-size: 30px;
         position: absolute;
+        letter-spacing: 2px;
 
         i{
           color: white;
@@ -94,7 +95,7 @@ body {
 
           display: flex;
           justify-content: space-between;
-          padding: 3px 0;
+          padding: 6px 0;
           &:last-child{
             color: #eecd00;
             display: block;
@@ -234,8 +235,8 @@ body {
       .face{
 
         background: url(../../images/ronaldoFace.png);
-        height: 250px;
-        width: 250px;
+        height: 235px;
+        width: 235px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -364,6 +365,22 @@ body {
           z-index: 1;
           font-size: 13px;
           font-weight: bold;
+
+        }
+
+        .backgroundLogo{
+          background: url(../../images/basketball.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          opacity: 0.3;
         }
 
         .circleThirdCard{
@@ -427,8 +444,23 @@ body {
         margin: 0 auto;
         margin-top: 3%;
         margin-bottom: 3%;
-        border: 3px solid #90232d;
+        // border: 3px solid #90232d;
+        border-top: 3px solid #90232d;
         position: relative;
+
+        .borderLeft{
+          border-left: 3px solid #90232d;
+          position: absolute;
+          bottom: 4%;
+          top: 0;
+        }
+        .borderRight{
+          border-left: 3px solid #90232d;
+          position: absolute;
+          bottom: 4%;
+          top: 0;
+          right: 0;
+        }
 
         .draftPick{
           position: absolute;
@@ -448,6 +480,47 @@ body {
 
           .middle{
             font-size: 20px;
+            display: flex;
+            justify-content: center;
+
+            .char1{
+              transform: translateX(0px) translateY(8px) rotate(-26deg);
+            }
+            .char2{
+              transform: translateX(0px) translateY(4px) rotate(-17deg);
+            }
+            .char3{
+              transform: translateX(0px) translateY(0px) rotate(-11deg);
+
+            }
+            .char4{
+              transform: translateX(0px) translateY(-2px) rotate(-12deg);
+
+            }
+            .char5{
+              transform: translateX(0px) translateY(-3px) rotate(-4deg);
+
+            }
+            .char6{
+              transform: translateX(3px) translateY(-3px) rotate(0deg);
+
+            }
+            .char7{
+              transform: translateX(3px) translateY(-3px) rotate(5deg);
+
+            }
+            .char8{
+              transform: translateX(4px) translateY(-1px) rotate(3deg);
+
+            }
+            .char9{
+              transform: translateX(4px) translateY(1px) rotate(14deg);
+
+            }
+            .char10{
+              transform: translateX(5px) translateY(6px) rotate(22deg);
+
+            }
           }
 
           .jordanBottom{
@@ -499,6 +572,16 @@ body {
           }
         }
       }
+      .photo:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+        height: 1px;
+        width: 100%;
+        border-bottom: 3px solid #90232d;
+      }
+
     }
   }
 
@@ -512,8 +595,8 @@ body {
       .rightSide{
         .face{
 
-          height: 230px;
-          width: 230px;
+          height: 200px;
+          width: 200px;
 
         }
         .circle{
@@ -539,12 +622,12 @@ body {
       }
 
       .rightSide{
-        // .face{
-        //
-        //   height: 150px;
-        //   width: 150px;
-        //
-        // }
+        .face{
+
+          height: 232px;
+          width: 232px;
+
+        }
         //
         // .rightText{
         //   font-size: 22px;
@@ -581,9 +664,13 @@ body {
       .rightSide{
         .face{
 
-          height: 130px;
-          width: 130px;
+          height: 200px;
+          width: 200px;
 
+        }
+
+        .ball{
+          bottom: 30%;
         }
       }
     }
