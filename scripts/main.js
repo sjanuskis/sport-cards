@@ -1,6 +1,25 @@
+const playerA = {
+    name: 'David Rocastle',
+    yearOfBirth: '1967',
+    height: '173 cm',
+    weight: '72 kg',
+    goalsForCurrentTeam: '34',
+    internationalCups: '14',
+    topSignedFrom: 'N/A',
+    position: 'midfield',
+    squadNo: 'N/A'
+}
+
+
+// use 'let' or 'const' instead of 'var'. Make sure you understand 'scoping' in javascript.
+// let - https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let
+// const - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
 var firstCardHeader = document.querySelector('.header p');
+
+// assign content to the playerA names property
 firstCardHeader.textContent = 'David Rocastle';
 
+// apply for all the same logic as ^
 var factFile = document.querySelector('.left b');
 factFile.textContent = "FACT FILE";
 
