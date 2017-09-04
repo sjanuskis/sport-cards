@@ -1,3 +1,5 @@
+window.onload = function() {
+
 const playerA = {
     name: 'David Rocastle',
     yearOfBirth: '1967',
@@ -17,7 +19,7 @@ const playerA = {
 var firstCardHeader = document.querySelector('.header p');
 
 // assign content to the playerA names property
-firstCardHeader.textContent = 'David Rocastle';
+firstCardHeader.textContent = playerA.name;
 
 // apply for all the same logic as ^
 var factFile = document.querySelector('.left b');
@@ -27,37 +29,39 @@ var detailsFirstLineLeft = document.querySelector('#firstLineLeft');
 detailsFirstLineLeft.textContent = "Year of Birth";
 
 var detailsFirstLineRight = document.querySelector('#firstLineRight');
-detailsFirstLineRight.textContent = "1967";
+detailsFirstLineRight.textContent = playerA.yearOfBirth;
 
 var detailsSecondLineLeft = document.querySelector('#secondLineLeft');
 detailsSecondLineLeft.textContent = "Height (cm)";
 
 var detailsSecondLineRight = document.querySelector('#secondLineRight');
-detailsSecondLineRight.textContent = "173";
+detailsSecondLineRight.textContent = playerA.height;
 
 var detailsThirdLineLeft = document.querySelector('#thirdLineLeft');
 detailsThirdLineLeft.textContent = "Weight (kg)";
 
 var detailsThirdLineRight = document.querySelector('#thirdLineRight');
-detailsThirdLineRight.textContent = "72";
+detailsThirdLineRight.textContent = playerA.weight;
 
 var detailsFourthLineLeft = document.querySelector('#fourthLineLeft');
 fourthLineLeft.textContent = "Goals for Arsenal";
 
 var detailsFourthLineRight = document.querySelector('#fourthLineRight');
-detailsFourthLineRight.textContent = "34";
+detailsFourthLineRight.textContent = playerA.goalsForCurrentTeam;
 
 var detailsFifthLineLeft = document.querySelector('#fifthLineLeft');
 detailsFifthLineLeft.textContent = "International Caps";
 
 var detailsFifthLineRight = document.querySelector('#fifthLineRight');
-detailsFifthLineRight.textContent = "14";
+detailsFifthLineRight.textContent = playerA.internationalCups;
 
 var bottomTextTop = document.querySelector('#bottomTextTop');
-bottomTextTop.textContent = "Top Signed from: N/A";
+bottomTextTop.textContent = "Top Signed from: " + playerA.topSignedFrom;
 
 var bottomTextMiddle = document.querySelector('#bottomTextMiddle');
-bottomTextMiddle.textContent = "Position: Midfield";
+bottomTextMiddle.textContent = "Position: " + playerA.position;
 
 var bottomTextEnd = document.querySelector('#bottomTextEnd');
-bottomTextEnd.textContent = "Squad No.: N/A";
+bottomTextEnd.textContent = "Squad No.: " + playerA.squadNo;
+
+};
