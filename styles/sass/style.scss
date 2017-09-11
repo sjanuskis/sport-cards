@@ -30,7 +30,7 @@ body {
 .cards{
   display: flex;
 
-  .firstCard{
+  #firstCard{
     width: 300px;
     background-color: $firstCardBackground;
     padding: 15px;

@@ -22,23 +22,23 @@ body {
 
 .cards {
   display: flex; }
-  .cards .firstCard {
+  .cards #firstCard {
     width: 300px;
     background-color: #ff2300;
     padding: 15px;
     margin: 20px; }
-    .cards .firstCard .borderTop {
+    .cards #firstCard .borderTop {
       border: 2px solid white;
       width: 100%; }
-    .cards .firstCard .header {
+    .cards #firstCard .header {
       display: flex;
       justify-content: space-between; }
-      .cards .firstCard .header p {
+      .cards #firstCard .header p {
         color: white;
         font-size: 1.4em;
         font-weight: bold;
         margin: 5px 0; }
-    .cards .firstCard .picture {
+    .cards #firstCard .picture {
       background-image: url(../../images/firstCardPix.png);
       height: 226px;
       width: 100%;
@@ -47,14 +47,14 @@ body {
       background-size: contain;
       box-shadow: 0 0 15px 5px #ff2300 inset;
       border-radius: 10px; }
-    .cards .firstCard .info {
+    .cards #firstCard .info {
       display: flex;
       background: url(../../images/arsenalLogo.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       box-shadow: 0 0 15px 5px #ff2300 inset; }
-      .cards .firstCard .info .left {
+      .cards #firstCard .info .left {
         transform: rotate(270deg);
         transform-origin: left top 0;
         margin-top: 219px;
@@ -63,20 +63,20 @@ body {
         font-size: 30px;
         position: absolute;
         letter-spacing: 2px; }
-        .cards .firstCard .info .left i {
+        .cards #firstCard .info .left i {
           color: white; }
-      .cards .firstCard .info .detailsFirstCard {
+      .cards #firstCard .info .detailsFirstCard {
         color: white;
         flex-grow: 2;
         margin-left: 36px; }
-        .cards .firstCard .info .detailsFirstCard .line {
+        .cards #firstCard .info .detailsFirstCard .line {
           display: flex;
           justify-content: space-between;
           padding: 6px 0; }
-          .cards .firstCard .info .detailsFirstCard .line:last-child {
+          .cards #firstCard .info .detailsFirstCard .line:last-child {
             color: #eecd00;
             display: block; }
-        .cards .firstCard .info .detailsFirstCard .detailsBorder {
+        .cards #firstCard .info .detailsFirstCard .detailsBorder {
           border: 1px solid white;
           width: 100%; }
   .cards .secondCard {
