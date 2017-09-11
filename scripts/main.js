@@ -12,6 +12,31 @@ const playerA = {
     squadNo: 'N/A'
 }
 
+const players = [
+    {
+        name: 'David Rocastle',
+        yearOfBirth: '1967',
+        height: '173 cm',
+        weight: '72 kg',
+        goalsForCurrentTeam: '34',
+        internationalCups: '14',
+        topSignedFrom: 'N/A',
+        position: 'midfield',
+        squadNo: 'N/A'
+    },
+    {
+        name: 'Other Name',
+        yearOfBirth: '1977',
+        height: '181 cm',
+        weight: '78 kg',
+        goalsForCurrentTeam: '46',
+        internationalCups: '5',
+        topSignedFrom: 'N/A',
+        position: 'midfield',
+        squadNo: 'N/A'
+    }
+];
+
 var firstSport = document.getElementById('firstCard');
 
 const firstCardElements =
