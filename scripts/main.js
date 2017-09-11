@@ -56,65 +56,37 @@ const firstCardElements =
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
-        <div id="bottomTextTop"></div>
-        <div id="bottomTextMiddle"></div>
-        <div id="bottomTextEnd"></div>
+        <div id="bottomTextTop">Top Signed from: ${playerA.topSignedFrom}</div>
+        <div id="bottomTextMiddle">Position: ${playerA.position}</div>
+        <div id="bottomTextEnd">Squad No.: ${playerA.squadNo}</div>
       </div>
     </div>
   </div>
 `;
 
-  document.body.firstSport.innerHTML = firstCardElements;
+  firstSport.innerHTML = firstCardElements;
 
 // use 'let' or 'const' instead of 'var'. Make sure you understand 'scoping' in javascript.
 // let - https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let
 // const - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
 // var firstCardHeader = document.querySelector('.header p');
-//
-// // assign content to the playerA names property
-// firstCardHeader.textContent = playerA.name;
-//
-// apply for all the same logic as ^
-// var factFile = document.querySelector('.left b');
-// factFile.textContent = "FACT FILE";
-//
-// var detailsFirstLineLeft = document.querySelector('#firstLineLeft');
-// detailsFirstLineLeft.textContent = "Year of Birth";
-//
-// // var detailsFirstLineRight = document.querySelector('#firstLineRight');
-// // detailsFirstLineRight.textContent = playerA.yearOfBirth;
-//
-// var detailsSecondLineLeft = document.querySelector('#secondLineLeft');
-// detailsSecondLineLeft.textContent = "Height (cm)";
-//
-// // var detailsSecondLineRight = document.querySelector('#secondLineRight');
-// // detailsSecondLineRight.textContent = playerA.height;
-//
-// var detailsThirdLineLeft = document.querySelector('#thirdLineLeft');
-// detailsThirdLineLeft.textContent = "Weight (kg)";
-//
-// // var detailsThirdLineRight = document.querySelector('#thirdLineRight');
-// // detailsThirdLineRight.textContent = playerA.weight;
-//
-// var detailsFourthLineLeft = document.querySelector('#fourthLineLeft');
-// fourthLineLeft.textContent = "Goals for Arsenal";
-//
-// // var detailsFourthLineRight = document.querySelector('#fourthLineRight');
-// // detailsFourthLineRight.textContent = playerA.goalsForCurrentTeam;
-//
-// var detailsFifthLineLeft = document.querySelector('#fifthLineLeft');
-// detailsFifthLineLeft.textContent = "International Caps";
-//
-// // var detailsFifthLineRight = document.querySelector('#fifthLineRight');
-// // detailsFifthLineRight.textContent = playerA.internationalCups;
-//
-// var bottomTextTop = document.querySelector('#bottomTextTop');
-// bottomTextTop.textContent = "Top Signed from: " + playerA.topSignedFrom;
-//
-// var bottomTextMiddle = document.querySelector('#bottomTextMiddle');
-// bottomTextMiddle.textContent = "Position: " + playerA.position;
-//
-// var bottomTextEnd = document.querySelector('#bottomTextEnd');
-// bottomTextEnd.textContent = "Squad No.: " + playerA.squadNo;
+var factFile = document.querySelector('.left b');
+factFile.textContent = "FACT FILE";
+
+var detailsFirstLineLeft = document.querySelector('#firstLineLeft');
+detailsFirstLineLeft.textContent = "Year of Birth";
+
+var detailsSecondLineLeft = document.querySelector('#secondLineLeft');
+detailsSecondLineLeft.textContent = "Height (cm)";
+
+var detailsThirdLineLeft = document.querySelector('#thirdLineLeft');
+detailsThirdLineLeft.textContent = "Weight (kg)";
+
+var detailsFourthLineLeft = document.querySelector('#fourthLineLeft');
+fourthLineLeft.textContent = "Goals for Arsenal";
+
+var detailsFifthLineLeft = document.querySelector('#fifthLineLeft');
+detailsFifthLineLeft.textContent = "International Cups";
+
 
 };
