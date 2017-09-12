@@ -115,3 +115,45 @@ detailsFifthLineLeft.textContent = "International Cups";
 
 
 };
+
+
+
+// look at the example below:
+// all you need is an element in html with the id of card to see the result
+
+window.onload = function () {
+    const card = document.getElementById('card');
+    
+    const coders = [
+        {
+            name: 'Simonas'
+        },
+        {
+            name: 'Aurimas',
+            email: 'some@email.com'
+        }
+    ];
+    
+    coders.map(coder => {
+        card.insertAdjacentHTML('afterBegin', printCard(coder.name))
+    });
+
+    function printCard (name) {
+        console.log(name)
+        return `
+            <h1>Hola, ${name} </h1>
+        `
+    };
+};
+
+// using this example approach, try to loop over players array,
+// use insertAdjacentHTML api to add it to html, and instead of
+// passing the html, call a function (printCard(coder.name) in example)
+// and pass the arguments to the function, that the card will use.
+
+// Try to print both players using first cards template.
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+// ask as many questions as you like!
+
+
