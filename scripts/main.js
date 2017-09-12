@@ -43,7 +43,7 @@ const firstCardElements =
 `
   <div class="borderTop"></div>
   <div class="header">
-    <p>${playerA.name}</p>
+    <p>${players[0].name}</p>
     <p>
       <i class="fa fa-flag-checkered" aria-hidden="true"></i>
     </p>
@@ -57,33 +57,33 @@ const firstCardElements =
     <div class="detailsFirstCard">
       <div class="line">
         <div id="firstLineLeft"></div>
-        <div id="firstLineRight">${playerA.yearOfBirth}</div>
+        <div id="firstLineRight">${players[0].yearOfBirth}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="secondLineLeft"></div>
-        <div id="secondLineRight">${playerA.height}</div>
+        <div id="secondLineRight">${players[0].height}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="thirdLineLeft"></div>
-        <div id="thirdLineRight">${playerA.weight}</div>
+        <div id="thirdLineRight">${players[0].weight}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="fourthLineLeft"></div>
-        <div id="fourthLineRight">${playerA.goalsForCurrentTeam}</div>
+        <div id="fourthLineRight">${players[0].goalsForCurrentTeam}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="fifthLineLeft"></div>
-        <div id="fifthLineRight">${playerA.fifthLineRight}</div>
+        <div id="fifthLineRight">${players[0].fifthLineRight}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
-        <div id="bottomTextTop">Top Signed from: ${playerA.topSignedFrom}</div>
-        <div id="bottomTextMiddle">Position: ${playerA.position}</div>
-        <div id="bottomTextEnd">Squad No.: ${playerA.squadNo}</div>
+        <div id="bottomTextTop">Top Signed from: ${players[0].topSignedFrom}</div>
+        <div id="bottomTextMiddle">Position: ${players[0].position}</div>
+        <div id="bottomTextEnd">Squad No.: ${players[0].squadNo}</div>
       </div>
     </div>
   </div>
