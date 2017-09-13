@@ -1,5 +1,7 @@
 window.onload = function() {
 
+const firstSport = document.getElementById('firstCard');
+
 const playerA = {
     name: 'David Rocastle',
     yearOfBirth: '1967',
@@ -37,13 +39,16 @@ const players = [
     }
 ];
 
-var firstSport = document.getElementById('firstCard');
+players.map(player => {
+  firstSport.insertAdjacentHTML('afterBegin', printCard(player.name, player.yearOfBirth, player.height, player.weight,
+    player.goalsForCurrentTeam, player.internationalCups, player.topSignedFrom, player.position, player.squadNo))
+});
 
-const firstCardElements =
-`
+function printCard (name, yearOfBirth, height, weight, goalsForCurrentTeam, internationalCups, topSignedFrom, position, squadNo){
+  return `
   <div class="borderTop"></div>
   <div class="header">
-    <p>${players[0].name}</p>
+    <p>${name}</p>
     <p>
       <i class="fa fa-flag-checkered" aria-hidden="true"></i>
     </p>
@@ -57,44 +62,44 @@ const firstCardElements =
     <div class="detailsFirstCard">
       <div class="line">
         <div id="firstLineLeft"></div>
-        <div id="firstLineRight">${players[0].yearOfBirth}</div>
+        <div id="firstLineRight">${yearOfBirth}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="secondLineLeft"></div>
-        <div id="secondLineRight">${players[0].height}</div>
+        <div id="secondLineRight">${height}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="thirdLineLeft"></div>
-        <div id="thirdLineRight">${players[0].weight}</div>
+        <div id="thirdLineRight">${weight}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="fourthLineLeft"></div>
-        <div id="fourthLineRight">${players[0].goalsForCurrentTeam}</div>
+        <div id="fourthLineRight">${goalsForCurrentTeam}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
         <div id="fifthLineLeft"></div>
-        <div id="fifthLineRight">${players[0].fifthLineRight}</div>
+        <div id="fifthLineRight">${internationalCups}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
-        <div id="bottomTextTop">Top Signed from: ${players[0].topSignedFrom}</div>
-        <div id="bottomTextMiddle">Position: ${players[0].position}</div>
-        <div id="bottomTextEnd">Squad No.: ${players[0].squadNo}</div>
+        <div id="bottomTextTop">Top Signed from: ${topSignedFrom}</div>
+        <div id="bottomTextMiddle">Position: ${position}</div>
+        <div id="bottomTextEnd">Squad No.: ${squadNo}</div>
       </div>
     </div>
   </div>
-`;
-
-  firstSport.innerHTML = firstCardElements;
+  `
+};
 
 // use 'let' or 'const' instead of 'var'. Make sure you understand 'scoping' in javascript.
 // let - https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let
 // const - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
 // var firstCardHeader = document.querySelector('.header p');
+
 var factFile = document.querySelector('.left b');
 factFile.textContent = "FACT FILE";
 
@@ -108,52 +113,9 @@ var detailsThirdLineLeft = document.querySelector('#thirdLineLeft');
 detailsThirdLineLeft.textContent = "Weight (kg)";
 
 var detailsFourthLineLeft = document.querySelector('#fourthLineLeft');
-fourthLineLeft.textContent = "Goals for Arsenal";
+detailsFourthLineLeft.textContent = "Goals for Arsenal";
 
 var detailsFifthLineLeft = document.querySelector('#fifthLineLeft');
 detailsFifthLineLeft.textContent = "International Cups";
 
-
 };
-
-
-
-// look at the example below:
-// all you need is an element in html with the id of card to see the result
-
-window.onload = function () {
-    const card = document.getElementById('card');
-    
-    const coders = [
-        {
-            name: 'Simonas'
-        },
-        {
-            name: 'Aurimas',
-            email: 'some@email.com'
-        }
-    ];
-    
-    coders.map(coder => {
-        card.insertAdjacentHTML('afterBegin', printCard(coder.name))
-    });
-
-    function printCard (name) {
-        console.log(name)
-        return `
-            <h1>Hola, ${name} </h1>
-        `
-    };
-};
-
-// using this example approach, try to loop over players array,
-// use insertAdjacentHTML api to add it to html, and instead of
-// passing the html, call a function (printCard(coder.name) in example)
-// and pass the arguments to the function, that the card will use.
-
-// Try to print both players using first cards template.
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
-// ask as many questions as you like!
-
-

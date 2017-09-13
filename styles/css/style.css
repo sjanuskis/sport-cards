@@ -79,6 +79,9 @@ body {
         .cards #firstCard .info .detailsFirstCard .detailsBorder {
           border: 1px solid white;
           width: 100%; }
+    .cards #firstCard .cardBottom {
+      height: 20px;
+      width: 100%; }
   .cards .secondCard {
     width: 740px;
     background-color: white;
