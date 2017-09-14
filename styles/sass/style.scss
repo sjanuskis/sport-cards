@@ -35,6 +35,7 @@ body {
     background-color: $firstCardBackground;
     padding: 15px;
     margin: 20px;
+    display: block;
 
     .borderTop{
       border: 2px solid white;
@@ -111,13 +112,45 @@ body {
 
     }
 
-  .cardBottom{
-    height: 20px;
-    width: 100%;
-  }
+    .cardBottom{
+      height: 20px;
+      width: 100%;
+    }
   }
 
-  .secondCard{
+  .buttons{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+
+    #hide{
+      background-color: white;
+      padding: 10px;
+      margin: 20px;
+      max-height: 40px;
+      border-radius: 20%;
+      text-decoration: none;
+      display: true;
+      text-align: center;
+      display: block;
+    }
+
+    #show{
+      background-color: white;
+      padding: 10px;
+      margin: 20px;
+      max-height: 40px;
+      border-radius: 20%;
+      text-decoration: none;
+      display: true;
+      text-align: center;
+      display: none;
+    }
+  }
+
+
+  #secondCard{
     width: 740px;
     background-color: white;
     margin: 20px;
@@ -220,7 +253,7 @@ body {
         background: repeating-linear-gradient(-30deg, #e9eece, #72786d 10%, #e9eece 18%);
         position: absolute;
         /* padding-right: 50px; */
-        left: 307px;
+        left: 240px;
         top: -450px;
         box-shadow: -5px 0px 12px black;
       }
@@ -332,9 +365,44 @@ body {
         position: absolute;
       }
     }
-  }
 
-  .thirdCard{
+  }
+  .buttons{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+
+    #hideTwo{
+      background-color: white;
+      padding: 10px;
+      margin: 20px;
+      max-height: 40px;
+      border-radius: 20%;
+      text-decoration: none;
+      display: true;
+      text-align: center;
+      display: block;
+    }
+
+    #showTwo{
+      background-color: white;
+      padding: 10px;
+      margin: 20px;
+      max-height: 40px;
+      border-radius: 20%;
+      text-decoration: none;
+      display: true;
+      text-align: center;
+      display: none;
+    }
+  }
+}
+
+.displaySecondLine{
+  display: flex;
+
+  #thirdCard{
     width: 300px;
     background-color: #dfd8dd;
     margin: 20px 10px;
@@ -590,9 +658,42 @@ body {
       }
 
     }
-  }
 
+  }
+  .buttons{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+
+    #hideThree{
+      background-color: white;
+      padding: 10px;
+      margin: 20px;
+      max-height: 40px;
+      border-radius: 20%;
+      text-decoration: none;
+      display: true;
+      text-align: center;
+      display: block;
+    }
+
+    #showThree{
+      background-color: white;
+      padding: 10px;
+      margin: 20px;
+      max-height: 40px;
+      border-radius: 20%;
+      text-decoration: none;
+      display: true;
+      text-align: center;
+      display: none;
+    }
+  }
 }
+
+
+
 
 @media screen and (min-width: 960px) and (max-width: 1280px){
 
