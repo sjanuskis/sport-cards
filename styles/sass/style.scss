@@ -27,7 +27,7 @@ body {
   height: 100%;
 }
 
-.cards{
+#cards{
   display: flex;
 
   #firstCard{
@@ -122,6 +122,7 @@ body {
     background-color: white;
     margin: 20px;
     display: flex;
+    max-height: 510px;
 
     .leftSide{
       background: url(../../images/ronaldo.png);
@@ -338,6 +339,7 @@ body {
     background-color: #dfd8dd;
     margin: 20px 10px;
     border: 6px solid #cfc8cb;
+    max-height: 530px;
 
     .top{
       background-color: black;

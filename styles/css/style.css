@@ -20,25 +20,25 @@ body {
   min-height: 100vh;
   height: 100%; }
 
-.cards {
+#cards {
   display: flex; }
-  .cards #firstCard {
+  #cards #firstCard {
     width: 300px;
     background-color: #ff2300;
     padding: 15px;
     margin: 20px; }
-    .cards #firstCard .borderTop {
+    #cards #firstCard .borderTop {
       border: 2px solid white;
       width: 100%; }
-    .cards #firstCard .header {
+    #cards #firstCard .header {
       display: flex;
       justify-content: space-between; }
-      .cards #firstCard .header p {
+      #cards #firstCard .header p {
         color: white;
         font-size: 1.4em;
         font-weight: bold;
         margin: 5px 0; }
-    .cards #firstCard .picture {
+    #cards #firstCard .picture {
       background-image: url(../../images/firstCardPix.png);
       height: 226px;
       width: 100%;
@@ -47,14 +47,14 @@ body {
       background-size: contain;
       box-shadow: 0 0 15px 5px #ff2300 inset;
       border-radius: 10px; }
-    .cards #firstCard .info {
+    #cards #firstCard .info {
       display: flex;
       background: url(../../images/arsenalLogo.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       box-shadow: 0 0 15px 5px #ff2300 inset; }
-      .cards #firstCard .info .left {
+      #cards #firstCard .info .left {
         transform: rotate(270deg);
         transform-origin: left top 0;
         margin-top: 219px;
@@ -63,31 +63,32 @@ body {
         font-size: 30px;
         position: absolute;
         letter-spacing: 2px; }
-        .cards #firstCard .info .left i {
+        #cards #firstCard .info .left i {
           color: white; }
-      .cards #firstCard .info .detailsFirstCard {
+      #cards #firstCard .info .detailsFirstCard {
         color: white;
         flex-grow: 2;
         margin-left: 36px; }
-        .cards #firstCard .info .detailsFirstCard .line {
+        #cards #firstCard .info .detailsFirstCard .line {
           display: flex;
           justify-content: space-between;
           padding: 6px 0; }
-          .cards #firstCard .info .detailsFirstCard .line:last-child {
+          #cards #firstCard .info .detailsFirstCard .line:last-child {
             color: #eecd00;
             display: block; }
-        .cards #firstCard .info .detailsFirstCard .detailsBorder {
+        #cards #firstCard .info .detailsFirstCard .detailsBorder {
           border: 1px solid white;
           width: 100%; }
-    .cards #firstCard .cardBottom {
+    #cards #firstCard .cardBottom {
       height: 20px;
       width: 100%; }
-  .cards .secondCard {
+  #cards .secondCard {
     width: 740px;
     background-color: white;
     margin: 20px;
-    display: flex; }
-    .cards .secondCard .leftSide {
+    display: flex;
+    max-height: 510px; }
+    #cards .secondCard .leftSide {
       background: url(../../images/ronaldo.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -98,7 +99,7 @@ body {
       margin-right: 2%;
       position: relative;
       overflow: hidden; }
-      .cards .secondCard .leftSide .circle {
+      #cards .secondCard .leftSide .circle {
         width: 1000px;
         height: 1000px;
         border-radius: 43%;
@@ -108,7 +109,7 @@ body {
         left: -933px;
         top: -243px;
         box-shadow: 9px 0px 30px black; }
-      .cards .secondCard .leftSide .text {
+      #cards .secondCard .leftSide .text {
         color: #ede44e;
         font-size: 20px;
         line-height: 0.7;
@@ -117,9 +118,9 @@ body {
         padding-left: 8px;
         text-shadow: 2px 2px black;
         position: absolute; }
-        .cards .secondCard .leftSide .text p {
+        #cards .secondCard .leftSide .text p {
           padding-left: 8px; }
-        .cards .secondCard .leftSide .text .below {
+        #cards .secondCard .leftSide .text .below {
           color: #f0f4e9;
           text-shadow: 1px 1px black;
           transform: rotate(270deg);
@@ -129,10 +130,10 @@ body {
           text-align: center;
           position: absolute;
           width: 400px; }
-          .cards .secondCard .leftSide .text .below b {
+          #cards .secondCard .leftSide .text .below b {
             color: #cd5930;
             font-size: 20px; }
-      .cards .secondCard .leftSide .logo {
+      #cards .secondCard .leftSide .logo {
         background: url(../../images/madridLogo.png);
         height: 40px;
         width: 40px;
@@ -141,7 +142,7 @@ body {
         background-size: cover;
         position: absolute;
         bottom: 8px; }
-      .cards .secondCard .leftSide .ball {
+      #cards .secondCard .leftSide .ball {
         background: linear-gradient(45deg, #25701f 40%, #da3e03 55%);
         height: 30px;
         width: 30px;
@@ -150,7 +151,7 @@ body {
         top: 30px;
         border-radius: 100%;
         box-shadow: 2px 2px 2px black; }
-    .cards .secondCard .rightSide {
+    #cards .secondCard .rightSide {
       background: linear-gradient(#f25900 26%, #bed000, #fff 80%);
       width: 47%;
       margin: 1%;
@@ -158,7 +159,7 @@ body {
       position: relative;
       overflow: hidden;
       border-left: 1px solid #9e8d77; }
-      .cards .secondCard .rightSide .circle {
+      #cards .secondCard .rightSide .circle {
         width: 1400px;
         height: 1400px;
         border-radius: 50%;
@@ -168,7 +169,7 @@ body {
         left: 307px;
         top: -450px;
         box-shadow: -5px 0px 12px black; }
-      .cards .secondCard .rightSide .rightText {
+      #cards .secondCard .rightSide .rightText {
         color: #f0f4e9;
         text-shadow: 1px 1px black;
         transform: rotate(90deg);
@@ -179,7 +180,7 @@ body {
         position: absolute;
         z-index: 1;
         font-weight: bold; }
-      .cards .secondCard .rightSide .face {
+      #cards .secondCard .rightSide .face {
         background: url(../../images/ronaldoFace.png);
         height: 235px;
         width: 235px;
@@ -190,19 +191,19 @@ body {
         margin: 0 auto;
         margin-top: 20px;
         box-shadow: 0 0 15px 5px #f55b00 inset; }
-      .cards .secondCard .rightSide .info {
+      #cards .secondCard .rightSide .info {
         text-align: center;
         margin: 0 30px; }
-        .cards .secondCard .rightSide .info .header {
+        #cards .secondCard .rightSide .info .header {
           color: #e8ebbd;
           font-size: 18px;
           text-shadow: 2px 1px black;
           font-weight: bold; }
-        .cards .secondCard .rightSide .info .details {
+        #cards .secondCard .rightSide .info .details {
           font-size: 14px; }
-          .cards .secondCard .rightSide .info .details p {
+          #cards .secondCard .rightSide .info .details p {
             font-size: 12px; }
-        .cards .secondCard .rightSide .info .sticker {
+        #cards .secondCard .rightSide .info .sticker {
           background-color: #cabd43;
           width: 43px;
           font-size: 10px;
@@ -211,17 +212,17 @@ body {
           font-weight: bold;
           border: 0.5px solid black;
           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-          .cards .secondCard .rightSide .info .sticker .top {
+          #cards .secondCard .rightSide .info .sticker .top {
             color: #91451e; }
-          .cards .secondCard .rightSide .info .sticker .bottom {
+          #cards .secondCard .rightSide .info .sticker .bottom {
             color: #475e35;
             font-style: italic; }
-        .cards .secondCard .rightSide .info .border {
+        #cards .secondCard .rightSide .info .border {
           width: 100%;
           height: 2px;
           background: linear-gradient(to right, rgba(255, 0, 0, 0), #f55b00, rgba(255, 0, 0, 0));
           margin: 2px 0; }
-      .cards .secondCard .rightSide .ball {
+      #cards .secondCard .rightSide .ball {
         background: linear-gradient(45deg, #25701f 40%, #da3e03 55%);
         height: 30px;
         width: 30px;
@@ -230,7 +231,7 @@ body {
         bottom: 24%;
         border-radius: 100%;
         box-shadow: 2px 2px 2px black; }
-      .cards .secondCard .rightSide .number {
+      #cards .secondCard .rightSide .number {
         background-color: #f9df00;
         height: 30px;
         width: 30px;
@@ -241,7 +242,7 @@ body {
         text-align: center;
         font-size: 27px;
         font-weight: bold; }
-      .cards .secondCard .rightSide .rotatedText {
+      #cards .secondCard .rightSide .rotatedText {
         color: #f0f4e9;
         text-shadow: 1px 1px black;
         transform: rotate(270deg);
@@ -250,12 +251,13 @@ body {
         font-size: 10px;
         margin-left: 23px;
         position: absolute; }
-  .cards .thirdCard {
+  #cards .thirdCard {
     width: 300px;
     background-color: #dfd8dd;
     margin: 20px 10px;
-    border: 6px solid #cfc8cb; }
-    .cards .thirdCard .top {
+    border: 6px solid #cfc8cb;
+    max-height: 530px; }
+    #cards .thirdCard .top {
       background-color: black;
       width: 90%;
       margin: 5%;
@@ -263,7 +265,7 @@ body {
       padding-top: 9px;
       border: 6px solid #b0a5ab;
       overflow: hidden; }
-      .cards .thirdCard .top .content {
+      #cards .thirdCard .top .content {
         background-color: white;
         width: 94%;
         height: 58px;
@@ -271,7 +273,7 @@ body {
         border: 1px solid #493a23;
         padding: 7px;
         position: relative; }
-        .cards .thirdCard .top .content .gma {
+        #cards .thirdCard .top .content .gma {
           position: absolute;
           top: -6px;
           left: 0;
@@ -283,7 +285,7 @@ body {
           z-index: 1;
           font-size: 13px;
           font-weight: bold; }
-        .cards .thirdCard .top .content .backgroundLogo {
+        #cards .thirdCard .top .content .backgroundLogo {
           background: url(../../images/basketball.png);
           background-position: center;
           background-repeat: no-repeat;
@@ -296,7 +298,7 @@ body {
           right: 0;
           margin: auto;
           opacity: 0.3; }
-        .cards .thirdCard .top .content .circleThirdCard {
+        #cards .thirdCard .top .content .circleThirdCard {
           position: absolute;
           height: 100px;
           width: 100px;
@@ -309,29 +311,29 @@ body {
           margin: auto;
           text-align: center;
           border: 1px solid #493a23; }
-        .cards .thirdCard .top .content .text {
+        #cards .thirdCard .top .content .text {
           font-weight: bold;
           font-size: 11px;
           justify-content: space-between;
           display: flex;
           padding-top: 5px; }
-          .cards .thirdCard .top .content .text .left {
+          #cards .thirdCard .top .content .text .left {
             margin: auto 0; }
-          .cards .thirdCard .top .content .text .right {
+          #cards .thirdCard .top .content .text .right {
             text-align: center;
             margin: auto 0; }
-        .cards .thirdCard .top .content .bottomText {
+        #cards .thirdCard .top .content .bottomText {
           color: #615238;
           font-size: 8px;
           float: right;
           margin-top: 10px;
           font-weight: bold; }
-    .cards .thirdCard .bottom {
+    #cards .thirdCard .bottom {
       background-color: #e6e5e2;
       border: 6px solid #beb3b9;
       width: 90%;
       margin: 5%; }
-      .cards .thirdCard .bottom .photo {
+      #cards .thirdCard .bottom .photo {
         background: url(../../images/jordan.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -343,18 +345,18 @@ body {
         margin-bottom: 3%;
         border-top: 3px solid #90232d;
         position: relative; }
-        .cards .thirdCard .bottom .photo .borderLeft {
+        #cards .thirdCard .bottom .photo .borderLeft {
           border-left: 3px solid #90232d;
           position: absolute;
           bottom: 4%;
           top: 0; }
-        .cards .thirdCard .bottom .photo .borderRight {
+        #cards .thirdCard .bottom .photo .borderRight {
           border-left: 3px solid #90232d;
           position: absolute;
           bottom: 4%;
           top: 0;
           right: 0; }
-        .cards .thirdCard .bottom .photo .draftPick {
+        #cards .thirdCard .bottom .photo .draftPick {
           position: absolute;
           bottom: 30px;
           left: 0;
@@ -363,38 +365,38 @@ body {
           color: #d7d0d5;
           opacity: 0.5;
           line-height: 1.5; }
-          .cards .thirdCard .bottom .photo .draftPick .gmaHeader {
+          #cards .thirdCard .bottom .photo .draftPick .gmaHeader {
             font-size: 65px;
             text-shadow: 0px 2px #d7d0d5;
             line-height: 0.9; }
-          .cards .thirdCard .bottom .photo .draftPick .middle {
+          #cards .thirdCard .bottom .photo .draftPick .middle {
             font-size: 20px;
             display: flex;
             justify-content: center; }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char1 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char1 {
               transform: translateX(0px) translateY(8px) rotate(-26deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char2 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char2 {
               transform: translateX(0px) translateY(4px) rotate(-17deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char3 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char3 {
               transform: translateX(0px) translateY(0px) rotate(-11deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char4 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char4 {
               transform: translateX(0px) translateY(-2px) rotate(-12deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char5 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char5 {
               transform: translateX(0px) translateY(-3px) rotate(-4deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char6 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char6 {
               transform: translateX(3px) translateY(-3px) rotate(0deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char7 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char7 {
               transform: translateX(3px) translateY(-3px) rotate(5deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char8 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char8 {
               transform: translateX(4px) translateY(-1px) rotate(3deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char9 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char9 {
               transform: translateX(4px) translateY(1px) rotate(14deg); }
-            .cards .thirdCard .bottom .photo .draftPick .middle .char10 {
+            #cards .thirdCard .bottom .photo .draftPick .middle .char10 {
               transform: translateX(5px) translateY(6px) rotate(22deg); }
-          .cards .thirdCard .bottom .photo .draftPick .jordanBottom {
+          #cards .thirdCard .bottom .photo .draftPick .jordanBottom {
             font-size: 10px;
             letter-spacing: 4px; }
-        .cards .thirdCard .bottom .photo .jordan {
+        #cards .thirdCard .bottom .photo .jordan {
           position: absolute;
           bottom: 3px;
           left: 0;
@@ -406,7 +408,7 @@ body {
           border-radius: 10%;
           color: #b3b3b3;
           border: 1px solid #b3b3b3; }
-        .cards .thirdCard .bottom .photo .nbaLogo {
+        #cards .thirdCard .bottom .photo .nbaLogo {
           background: url(../../images/nba.png);
           height: 80px;
           width: 30px;
@@ -416,7 +418,7 @@ body {
           position: absolute;
           bottom: -5px;
           left: 5px; }
-        .cards .thirdCard .bottom .photo .bullsLogo {
+        #cards .thirdCard .bottom .photo .bullsLogo {
           height: 45px;
           width: 45px;
           background-color: #851c1b;
@@ -425,10 +427,10 @@ body {
           bottom: 0;
           right: 0;
           border: 2px solid #b3b3b3; }
-          .cards .thirdCard .bottom .photo .bullsLogo img {
+          #cards .thirdCard .bottom .photo .bullsLogo img {
             height: 45px;
             width: 45px; }
-      .cards .thirdCard .bottom .photo:before {
+      #cards .thirdCard .bottom .photo:before {
         content: "";
         position: absolute;
         left: 0;

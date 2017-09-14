@@ -1,6 +1,6 @@
 window.onload = function() {
 
-const firstSport = document.getElementById('firstCard');
+const firstSport = document.getElementById('cards');
 
 const playerA = {
     name: 'David Rocastle',
@@ -46,6 +46,7 @@ players.map(player => {
 
 function printCard (name, yearOfBirth, height, weight, goalsForCurrentTeam, internationalCups, topSignedFrom, position, squadNo){
   return `
+  <div id="firstCard">
   <div class="borderTop"></div>
   <div class="header">
     <p>${name}</p>
@@ -57,31 +58,31 @@ function printCard (name, yearOfBirth, height, weight, goalsForCurrentTeam, inte
   <div class="info">
     <div class="left">
       <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-      <b></b>
+      <b>FACT FILE</b>
     </div>
     <div class="detailsFirstCard">
       <div class="line">
-        <div id="firstLineLeft"></div>
+        <div id="firstLineLeft">Year of Birth</div>
         <div id="firstLineRight">${yearOfBirth}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
-        <div id="secondLineLeft"></div>
+        <div id="secondLineLeft">Height (cm)</div>
         <div id="secondLineRight">${height}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
-        <div id="thirdLineLeft"></div>
+        <div id="thirdLineLeft">Weight (kg)</div>
         <div id="thirdLineRight">${weight}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
-        <div id="fourthLineLeft"></div>
+        <div id="fourthLineLeft">Goals for Arsenal</div>
         <div id="fourthLineRight">${goalsForCurrentTeam}</div>
       </div>
       <div class="detailsBorder"></div>
       <div class="line">
-        <div id="fifthLineLeft"></div>
+        <div id="fifthLineLeft">International Cups</div>
         <div id="fifthLineRight">${internationalCups}</div>
       </div>
       <div class="detailsBorder"></div>
@@ -92,6 +93,7 @@ function printCard (name, yearOfBirth, height, weight, goalsForCurrentTeam, inte
       </div>
     </div>
   </div>
+  </div>
   `
 };
 
@@ -99,23 +101,5 @@ function printCard (name, yearOfBirth, height, weight, goalsForCurrentTeam, inte
 // let - https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let
 // const - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
 // var firstCardHeader = document.querySelector('.header p');
-
-var factFile = document.querySelector('.left b');
-factFile.textContent = "FACT FILE";
-
-var detailsFirstLineLeft = document.querySelector('#firstLineLeft');
-detailsFirstLineLeft.textContent = "Year of Birth";
-
-var detailsSecondLineLeft = document.querySelector('#secondLineLeft');
-detailsSecondLineLeft.textContent = "Height (cm)";
-
-var detailsThirdLineLeft = document.querySelector('#thirdLineLeft');
-detailsThirdLineLeft.textContent = "Weight (kg)";
-
-var detailsFourthLineLeft = document.querySelector('#fourthLineLeft');
-detailsFourthLineLeft.textContent = "Goals for Arsenal";
-
-var detailsFifthLineLeft = document.querySelector('#fifthLineLeft');
-detailsFifthLineLeft.textContent = "International Cups";
 
 };
